@@ -1,7 +1,7 @@
 import math
 import pandas as pd;
 url="./states.csv"
-least_distance=list()
+neast_distance=list()
 x=list()
 y=list()
 dist=list()
@@ -28,7 +28,7 @@ def getNearsetPharmacy(longitude,latitude,clientDistance):
         lat=row["latitude"]
         distance=calculateDistance(lng,lat,longitude,latitude)
         if distance <= clientDistance:
-            least_distance.append(distance)
+            neast_distance.append(distance)
             x.append(lng)
             y.append(lat)
             dist.append(distance)
