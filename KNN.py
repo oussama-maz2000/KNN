@@ -34,7 +34,7 @@ def getNearsetPharmacy(longitude,latitude,clientDistance):
             dist.append(distance)
     df=pd.DataFrame({'longitude':x,'latitude':y,'distance':dist })
     for index,row in df.iterrows():
-        print(row)
+        print(row["longitude"],row["latitude"],row["distance"])
 
 getNearsetPharmacy(35.5381401,6.098486,3);
     
