@@ -9,8 +9,8 @@ dist=list()
 
 
 def readDatafromCSV(url):
-    names=["name","longitude","latitude"]
-    dataset=pd.read_csv(url,usecols=names)
+    columns=["longitude","latitude"]
+    dataset=pd.read_csv(url,usecols=columns)
     dataset=dataset.reset_index()    
     return dataset
 
